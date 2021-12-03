@@ -1,0 +1,155 @@
+body {
+  font-size: 1.2em;
+}
+
+#app {
+  width: 90%;
+  margin: auto;
+}
+
+.grid {
+  display: grid;
+  width: 900px;
+  height: 3000px;
+  margin: auto;
+  grid-template: repeat(30, 1fr) / repeat(12, 1fr);
+}
+
+img {
+  max-width: 100%;
+  border-radius: 3%;
+}
+.b,
+.c,
+.e,
+.f,
+.h,
+.i,
+.k,
+.l,
+.n,
+.o {
+  text-align: center;
+  padding: 5%;
+  margin: auto;
+}
+/* set 1: repurposed living */
+.a {
+  grid-area: 1/3/6/13;
+}
+
+.b {
+  grid-area: 2/2/3/5;
+  z-index: 1;
+  background-color: #ffeb3b80;
+}
+
+.c {
+  grid-area: 2/1/5/4;
+  background-color: #ffeb3b80;
+}
+
+/* set 2: angles */
+
+.d {
+  grid-area: 5/1/7/8;
+}
+
+.e {
+  grid-area: 7/8/9/11;
+  background-color: #a5c3f180;
+}
+
+.f {
+  grid-area: 9/9/10/12;
+  background-color: #a5c3f180;
+}
+
+/* set 3: pattern play */
+
+.g {
+  grid-area: 12/3/17/13;
+}
+
+.h {
+  background-color: #dfd8cc85;
+  grid-area: 13/2/14/5;
+}
+
+.i {
+  grid-area: 14/1/15/3;
+  background-color: #dfd8cc85;
+}
+
+/* set 4: healing house */
+
+.j {
+  grid-area: 16/1/18/8;
+}
+
+.k {
+  background-color: #f59a978a;
+  grid-area: 19/8/20/11;
+}
+
+.l {
+  background-color: #f59a978a;
+  grid-area: 20/10/21/12;
+}
+
+/* set 5: curved perfection */
+
+.m {
+  grid-area: 23/3/28/13;
+}
+
+.n {
+  background-color: #d0e9fd8a;
+  grid-area: 24/2/26/5;
+}
+
+.o {
+  background-color: #d0e9fd8a;
+  grid-area: 25/1/27/3;
+}
+
+.headLine {
+  margin-top: 5vh;
+  height: 20vh;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  font-size: 120%;
+  margin-bottom: 10vh;
+}
+
+.box {
+  font-family: 'Roboto Slab', serif;
+  font-size: 90%;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 180%;
+  font-family: 'Playfair Display', serif;
+  text-decoration: underline;
+}
+
+/* media queries */
+
+@media (min-width: 1150px) {
+  #app {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 650px) {
+  .grid {
+  }
+
+  .title {
+    width: 65%;
+    font-size: 120%;
+  }
+}
